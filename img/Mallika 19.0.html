@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<!-- saved from url=(0026)http://gmit.ac.in/mallika/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title>Mallika 19.0</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="./Mallika 19.0_files/w3.css">
+<link rel="stylesheet" href="./Mallika 19.0_files/css">
+<link rel="stylesheet" href="./Mallika 19.0_files/font-awesome.min.css">
+ <link rel="stylesheet" href="./Mallika 19.0_files/bootstrap.min.css">
+  <script src="./Mallika 19.0_files/jquery.min.js.download"></script>
+  <script src="./Mallika 19.0_files/bootstrap.min.js.download"></script>
+<style>
+body {font-family: "Lato", sans-serif}
+.mySlides {display: none}
+img {
+   padding:50px;
+     
+   size: 20px;
+}
+
+a{
+
+  size: 10px;
+  padding:5px;
+}
+.container {
+
+  position: relative;
+  width: 90%;
+}
+
+.image {
+
+  display: block;
+  width: 70%;
+  height: auto;
+  border: 2px solid w3-black;
+}
+
+.overlay {
+
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 50px;
+
+  padding-left: 50px;
+  margin-top: 70px;
+  height: 70%;
+  width: 90%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.about{
+
+  padding:20px;
+}
+
+</style>
+</head><body background="./Mallika 19.0_files/mcp.png" style="background-repeat:no-repeat;width=&#39;952&#39;; height=&#39;1108&#39;; ">
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card">
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="http://gmit.ac.in/mallika/#" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+    <a href="http://gmit.ac.in/mallika/eve.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">ABOUT</a>
+    <a href="http://gmit.ac.in/mallika/contact.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONTACT</a>
+    <!--
+    <div class="w3-dropdown-hover w3-hide-small">
+      <button class="w3-padding-large w3-button" title="More">MORE <i class="fa fa-caret-down"></i></button>     
+      <div class="w3-dropdown-content w3-bar-block w3-card-4">
+        <a href="#" class="w3-bar-item w3-button">Merchandise</a>
+        <a href="#" class="w3-bar-item w3-button">Extras</a>
+        <a href="#" class="w3-bar-item w3-button">Media</a>
+      </div>
+    </div>
+
+
+    <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a>
+  -->
+  </div>
+</div>
+
+<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+  <a href="http://gmit.ac.in/mallika/eve.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">ABOUT</a>
+  <a href="http://gmit.ac.in/mallika/contact.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CONTACT</a>
+  
+</div>
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:2000px;margin-top:46px">
+
+  <!-- Automatic Slideshow Images 
+  <div class="mySlides w3-display-container w3-center">
+    <img src="new2.jpg" style="width:100%">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      <h3>Los Angeles</h3>
+      <p><b>We had the best time playing at Venice Beach!</b></p>   
+    </div>
+  </div>
+  <div class="mySlides w3-display-container w3-center">
+    <img src="NIGHT.png" style="width:100%">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      <h3>New York</h3>
+      <p><b>The atmosphere in New York is lorem ipsum.</b></p>    
+    </div>
+  </div>
+  <div class="mySlides w3-display-container w3-center">
+    <img src="new3.jpg" style="width:100%">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      <h3>Chicago</h3>
+      <p><b>Thank you, Chicago - A night we won't forget.</b></p>    
+    </div>
+  </div>
+  <div class="mySlides w3-display-container w3-center">
+    <img src="new5.jpg" style="width:100%">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      <h3>Chicago</h3>
+      <p><b>Thank you, Chicago - A night we won't forget.</b></p>    
+    </div>
+  </div>
+-->
+  <!-- The Band Section -->
+<br>
+
+  <h1 style="color: #E5D24A;  font-family: &#39;Times New Roman&#39;, Times, serif;  font-size: 60px; font-style: bold;" align="center">MALLIKA 19.0</h1>
+
+<h2 align="left" style="color: white;">Event Starts in</h2>
+<iframe src="./Mallika 19.0_files/iso2019-05-03T00_00_00.html" allowtransparency="true" frameborder="0" width="248" height="65"></iframe>
+
+<!-- Icon Bar (Sidebar - hidden on small screens) -->
+
+</div>
+
+<!-- Photo Grid -->
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+  <br>
+
+<br>
+<br>
+<br>
+<br><br>
+<br>
+<br>
+<br><br>
+<br>
+<div class="about">
+<br>
+<br>
+<h1>NOTE: </h1>
+<h3>Events will be conducted if there are minimum 3 registrations.</h3>
+<h3>Enrollment participation shall be considered 3 hours before the event is scheduled.</h3>
+<h3>Max. Three teams/persons from the department shall be registered which are shortlisted by the department Mallika coordinator.
+ </h3>
+<h1>ENTRY FEE:</h1>
+<h3>Solo events Rs.20 per participant </h3>
+<h3>Group events Rs.10 per participant</h3>
+<h3>For group events, only the team leader should register.</h3><br>
+<br>
+  
+<audio controls="">
+  <source src="song.ogg" type="audio/ogg">
+  <source src="song.mpeg" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="http://gmit.ac.in/mallika/#">EVENTS</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li></li>
+      <li class="active"><a href="http://gmit.ac.in/mallika/#">ALL</a></li>
+      <li></li>
+      <li><a href="http://gmit.ac.in/mallika/mainpage2.html">Pre events</a></li>
+      <li></li>
+      <li><a href="http://gmit.ac.in/mallika/mainpage3.html">On stage events</a></li>
+      <li></li>
+      <li><a href="http://gmit.ac.in/mallika/event_score.html">Scores</a></li>
+    </ul>
+  </div>
+</nav>
+
+
+
+<h1 align="center">EVENTS</h1>
+<!--<p align="center" class="w3-padding-16"><button align="center" class="w3-button w3-black" onclick="myFunction()">EVENTS</button></p>
+-->
+</div>
+
+<div class="w3-row" id="myGrid" style="margin-bottom:128px;">
+
+  <div class="w3-third">
+     <div class="container">
+      <a href="http://gmit.ac.in/mallika/antakshari/ant_reg.html"><img class="image" src="./Mallika 19.0_files/antakshari.png" style="width:100%"></a><div class="overlay"><a href="http://gmit.ac.in/mallika/antakshari/ant_reg.html">
+        <div class="text">Antakshari</div>
+         </a>
+        </div>
+      </div>
+
+
+<div class="container">
+    <a href="http://gmit.ac.in/mallika/creativewriting/cre_reg.html"><img class="image" src="./Mallika 19.0_files/creativewritingeng.png" style="width:100%"></a><div class="overlay"><a href="http://gmit.ac.in/mallika/creativewriting/cre_reg.html">
+    <div class="text">Creative Writing Kannada</div>
+   </a>
+  </div>
+</div>
+
+<div class="container">
+    <a href="http://gmit.ac.in/mallika/debate/deb_reg.html"><img class="image" src="./Mallika 19.0_files/debate.png" style="width:100%"></a><div class="overlay"><a href="http://gmit.ac.in/mallika/debate/deb_reg.html">
+    <div class="text">Debate</div>
+</a>
+  </div>
+</div>
+
+<div class="container">
+    <a href="http://gmit.ac.in/mallika/duetsinging/dsi_reg.html"><img class="image" src="./Mallika 19.0_files/duetsinging.png" style="width:100%"></a><div class="overlay"><a href="http://gmit.ac.in/mallika/duetsinging/dsi_reg.html">
+    <div class="text">Duet singing</div>
+</a>
+  </div>
+</div>
+
+<div class="container">
+    <a href="http://gmit.ac.in/mallika/facepainting/fac_reg.html"><img class="image" src="./Mallika 19.0_files/facepainting.png" style="width:100%"></a><div class="overlay"><a href="http://gmit.ac.in/mallika/facepainting/fac_reg.html">
+    <div class="text">Face Painting</div>
+</a>
+  </div>
+</div>
+
+<div class="container">
+    <a href="http://gmit.ac.in/mallika/fashionmasti/fam_reg.html"><img class="image" src="./Mallika 19.0_files/fashionmastii.png" style="width:100%"></a><div class="overlay"><a href="http://gmit.ac.in/mallika/fashionmasti/fam_reg.html">
+    <div class="text">Fashion Masti</div>
+</a>
+  </div>
+</div>
+
+<div class="container">
+    <a href="http://gmit.ac.in/mallika/junktofunk/jtf_reg.html"><img class="image" src="./Mallika 19.0_files/junktofunk.png" style="width:100%"></a><div class="overlay"><a href="http://gmit.ac.in/mallika/junktofunk/jtf_reg.html">
+    <div class="text">Junk to Funk</div>
+</a>
+  </div>
+</div>
+
+
+  
+  </div>
+
+  <div class="w3-third">
+    <style type="text/css">
+
+    </style>
+    <div class="container">
+    <a href="http://gmit.ac.in/mallika/gdnf/gnf_reg.html"><img class="image" src="./Mallika 19.0_files/groupdancenonfilmy.png" style="width:100%"></a><div class="overlay"><a href="http://gmit.ac.in/mallika/gdnf/gnf_reg.html">
+    <div class="text">Group Dance Non Filmy <p></p></div>
+</a>
+  </div>
+</div>
+
+<div class="container">
+    <a href="http://gmit.ac.in/mallika/solodance/sod_reg.html"><img class="image" src="./Mallika 19.0_files/solodance.png" style="width:100%"></a><div class="overlay"><a href="http://gmit.ac.in/mallika/solodance/sod_reg.html">
+    <div class="text">Solo Dance</div>
+</a>
+  </div>
+</div>
+
+<div class="container">
+    <a href="http://gmit.ac.in/mallika/madads/mad_reg.html"><img class="image" src="./Mallika 19.0_files/madads.png" style="width:100%"></a><div class="overlay"><a href="http://gmit.ac.in/mallika/madads/mad_reg.html">
+    <div class="text">Mad Ads</div>
+</a>
+  </div>
+</div>
+
+<div class="container">
+    <a href="http://gmit.ac.in/mallika/skit/ski_reg.html"><img class="image" src="./Mallika 19.0_files/Skit.png" style="width:100%"></a><div class="overlay"><a href="http://gmit.ac.in/mallika/skit/ski_reg.html">
+    <div class="text">Skit</div>
+</a>
+  </div>
+</div>
+
+<div class="container">
+    <a href="http://gmit.ac.in/mallika/classicalsolo/cds_reg.html"><img class="image" src="./Mallika 19.0_files/soloclassical.png" style="width:100%"></a><div class="overlay"><a href="http://gmit.ac.in/mallika/classicalsolo/cds_reg.html">
+    <div class="text">Solo classical Dance</div>
+</a>
+  </div>
+</div>
+
+<div class="container">
+    <a href="http://gmit.ac.in/mallika/solosinging/ssi_reg.html"><img class="image" src="./Mallika 19.0_files/solosinging.png" style="width:100%"></a><div class="overlay"><a href="http://gmit.ac.in/mallika/solosinging/ssi_reg.html">
+    <div class="text">Solo Singing</div>
+</a>
+  </div>
+</div>
+    
+     <div class="container">
+    <a href="http://gmit.ac.in/mallika/english_creative/ecr_reg.html"><img class="image" src="./Mallika 19.0_files/creativewritingeng.png" style="width:100%"></a><div class="overlay"><a href="http://gmit.ac.in/mallika/english_creative/ecr_reg.html">
+    <div class="text">Creative Writing English</div>
+ </a>
+  </div>
+</div>
+  <div class="container">
+    <a href="http://gmit.ac.in/mallika/groupsinging/gsi_reg.html"><img class="image" src="./Mallika 19.0_files/groupsinging.png" style="width:100%"></a><div class="overlay"><a href="http://gmit.ac.in/mallika/groupsinging/gsi_reg.html">
+    <div class="text">Group Singing</div>
+</a>
+  </div>
+</div>
+  
+    
+    
+   
+  </div>
+
+  <div class="w3-third">
+ <div class="container">
+    <a href="http://gmit.ac.in/mallika/mehndi/meh_reg.html"><img class="image" src="./Mallika 19.0_files/mehndi.png" style="width:100%"></a><div class="overlay"><a href="http://gmit.ac.in/mallika/mehndi/meh_reg.html">
+    <div class="text">Mehndi</div>
+</a>
+  </div>
+</div>
+    
+    <div class="container">
+    <a href="http://gmit.ac.in/mallika/mimes/mim_reg.html"><img class="image" src="./Mallika 19.0_files/mimes.png" style="width:100%"></a><div class="overlay"><a href="http://gmit.ac.in/mallika/mimes/mim_reg.html">
+    <div class="text">Mimes</div>
+</a>
+  </div>
+</div>
+
+ <div class="container">
+    <a href="http://gmit.ac.in/mallika/musicalcollage/mus_reg.html"><img class="image" src="./Mallika 19.0_files/musicalcollege.png" style="width:100%"></a><div class="overlay"><a href="http://gmit.ac.in/mallika/musicalcollage/mus_reg.html">
+    <div class="text">Musical collage</div>
+</a>
+  </div>
+</div>
+
+<div class="container">
+    <a href="http://gmit.ac.in/mallika/painting/pai_reg.html"><img class="image" src="./Mallika 19.0_files/painting.png" style="width:100%"></a><div class="overlay"><a href="http://gmit.ac.in/mallika/painting/pai_reg.html">
+    <div class="text">Painting</div>
+</a>
+  </div>
+</div>
+
+<div class="container">
+    <a href="http://gmit.ac.in/mallika/photography/pho_reg.html"><img class="image" src="./Mallika 19.0_files/photography.png" style="width:100%"></a><div class="overlay"><a href="http://gmit.ac.in/mallika/photography/pho_reg.html">
+    <div class="text">Photography</div>
+</a>
+  </div>
+</div>
+
+<div class="container">
+    <a href="http://gmit.ac.in/mallika/rangoli/ran_reg.html"><img class="image" src="./Mallika 19.0_files/rangoli.png" style="width:100%"></a><div class="overlay"><a href="http://gmit.ac.in/mallika/rangoli/ran_reg.html">
+    <div class="text">Rangoli</div>
+</a>
+  </div>
+</div>
+
+<div class="container">
+    <a href="http://gmit.ac.in/mallika/gdr/gdr_reg.html"><img class="image" src="./Mallika 19.0_files/groupdanceremix.png" style="width:100%"></a><div class="overlay"><a href="http://gmit.ac.in/mallika/gdr/gdr_reg.html">
+    <div class="text">Group dance remix</div>
+</a>
+  </div>
+</div>
+    
+    
+    
+    
+    
+    
+  </div>
+
+</div>
+
+  
+<!-- End Page Content -->
+
+
+<!-- Image of location/map -->
+
+
+<!-- Footer -->
+ <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
+  <a href="https://www.facebook.com/Mallika-19O-1375388575947092/">  <i class="fa fa-facebook-official w3-hover-opacity"></i>  </a>
+   <a href="https://www.instagram.com/gmit_mallika19/?hl=en"> <i class="fa fa-instagram w3-hover-opacity"></i></a>
+    <!--
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  -->
+      <p class="w3-medium">Developed by <a href="https://www.linkedin.com/in/sheshadri-p-s-26abab128" target="_blank" class="w3-hover-text-green">Sheshadri P S</a></p>
+  <!-- End footer -->
+  </footer>
+
+<script>
+// Automatic Slideshow - change image every 4 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 4000);    
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+// When the user clicks anywhere outside of the modal, close it
+var modal = document.getElementById('ticketModal');
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+
+
+</body></html>

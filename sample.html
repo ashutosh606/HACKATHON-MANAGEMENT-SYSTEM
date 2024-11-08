@@ -1,0 +1,186 @@
+
+						<center><h1 align="center">BRANCH POINTS</h1></center>
+<div class="container-fluid"><div class="row">
+<div align="center" >
+    <div class="col-sm-3" style="background-color:skyblue;"><font size="6"><b>CSE:</b>
+	<?php
+
+include("db_conection.php");
+
+ 
+	   $view_data="SELECT branch,sum(score) FROM branch_score where branch='CS' group by branch  ";//select query for viewing users.
+        $run=mysqli_query($link,$view_data);
+		 while($row=mysqli_fetch_array($run))//while look to fetch the result and store in a array $row.
+        {
+            
+			$branch=$row[0];
+           
+			$score=$row[1];
+        ?>
+							
+							<!--here showing results in the table -->
+							    
+								
+								  
+							          <td><b><?php echo $score;  ?></b></td>
+							
+							
+
+        <?php } ?></div>
+    <div class="col-sm-3" style="background-color:red;"><font size="6"><b>ISE:</b>
+	<?php
+
+include("db_conection.php");
+
+ 
+	   $view_data="SELECT branch,sum(score) FROM branch_score where branch='IS' group by branch  ";//select query for viewing users.
+        $run=mysqli_query($link,$view_data);
+		 while($row=mysqli_fetch_array($run))//while look to fetch the result and store in a array $row.
+        {
+            
+			$branch=$row[0];
+           
+			$score=$row[1];
+        ?>
+							
+							<!--here showing results in the table -->
+							    
+								
+								  
+							          <td><b><?php echo $score;  ?></b></td>
+							
+							
+
+        <?php } ?></div>
+    <div class="col-sm-3" style="background-color:gold;"  border=><font size="6"><b>ECE:</b>
+	<?php
+
+include("db_conection.php");
+
+ 
+	   $view_data="SELECT branch,sum(score) FROM branch_score where branch='EC' group by branch  ";//select query for viewing users.
+        $run=mysqli_query($link,$view_data);
+		 while($row=mysqli_fetch_array($run))//while look to fetch the result and store in a array $row.
+        {
+            
+			$branch=$row[0];
+           
+			$score=$row[1];
+        ?>
+							
+							<!--here showing results in the table -->
+							    
+								
+								  
+							          <td><b><?php echo $score;  ?></b></td>
+							
+							
+
+        <?php } ?></div>
+		<div class="col-sm-3" style="background-color:tomato;"><font size="6"><b>CIVIL:</b>
+	<?php
+
+include("db_conection.php");
+
+ 
+	   $view_data="SELECT branch,sum(score) FROM branch_score where branch='CIVIL' group by branch  ";//select query for viewing users.
+        $run=mysqli_query($link,$view_data);
+		 while($row=mysqli_fetch_array($run))//while look to fetch the result and store in a array $row.
+        {
+           
+			$score=$row[1];
+        ?>
+							
+							<!--here showing results in the table -->
+							    
+								
+								  
+							          <td><b><?php echo $score;  ?></b></td>
+							
+							
+
+        <?php } ?></div>
+	<div class="col-sm-4" style="background-color:blueviolet;"><font size="6"><b>MECH:</b>
+	<?php
+
+include("db_conection.php");
+
+ 
+	   $view_data="SELECT branch,sum(score) FROM branch_score where branch='MECH' group by branch  ";//select query for viewing users.
+        $run=mysqli_query($link,$view_data);
+		 while($row=mysqli_fetch_array($run))//while look to fetch the result and store in a array $row.
+        {
+            
+			$branch=$row[0];
+           
+			$score=$row[1];
+        ?>
+							
+							<!--here showing results in the table -->
+							    
+								
+								  
+							          <td><b><?php echo $score;  ?></b></td></font>
+							
+							
+
+        <?php } ?></div>
+		
+	
+		
+	<div class="col-sm-3" style="background-color:limegreen;"><font size="6"><b>BT:</b>
+	<?php
+
+include("db_conection.php");
+
+ 
+	   $view_data="SELECT branch,sum(score) FROM branch_score where branch='BT' group by branch  ";//select query for viewing users.
+        $run=mysqli_query($link,$view_data);
+		 while($row=mysqli_fetch_array($run))//while look to fetch the result and store in a array $row.
+        {
+            
+			$branch=$row[0];
+           
+			$score=$row[1];
+        ?>
+							
+							<!--here showing results in the table -->
+							    
+								
+								  
+							          <td><b><?php echo $score;  ?></b></td></font>
+							
+							
+
+        <?php } ?></div><br>
+		
+<div class="col-sm-4" style="background-color:darkorange;"><font size="6,"><b>MBA:</b>
+	<?php
+
+include("db_conection.php");
+
+ 
+	   $view_data="SELECT branch,sum(score) FROM branch_score where branch='MBA' group by branch  ";//select query for viewing users.
+        $run=mysqli_query($link,$view_data);
+		 while($row=mysqli_fetch_array($run))//while look to fetch the result and store in a array $row.
+        {
+            
+			$branch=$row[0];
+           
+			$score=$row[1];
+        ?>
+							
+							<!--here showing results in the table -->
+							    
+								
+								  
+							          <td><b><?php echo $score;  ?></b></td></font>
+							
+							
+
+        <?php } ?></div>
+  </div>
+</div>
+
+
+					</div><BR>
